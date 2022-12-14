@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --fc-page: #E1E1E6;
+    --bg-color: #2F2F33;
+    --cl-primary: #06181C;
+    --pl-color: #7C7C8A;
+    --bt-color: #065E7C;
+    --bt-remove: #F75A68;
+    --bg-thead: #092D38;
+    --tr-odd-color: #06161B80;
+    --tr-even-color: #06181C;
+    --fc-clear-page: #4E5455;
+
+
+}
+
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0, );
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+    margin: 11.5rem auto;
+    max-width: 112.0rem;
+}
+
+header {
+    margin: 8.7rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    gap: 0.8rem;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: var(--cl-primary);
+    color: var(--fc-page);
+    width: 46.2rem;
+    height: 4.8rem;
+    padding: 1.6rem;
+}
+
+::placeholder {
+    color: var(--pl-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-fav {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bt-color);
+    color: var(--fc-page);
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    width: 17.0rem;
+    height: 4.8rem;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.button-remove {
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 160%;
+    color: var(--bt-remove);
+}
+
+.table-box {
+    overflow-y: scroll;
+    max-height: 60.0rem;
+    border-radius: 1.2rem;
+    border: 0.1rem solid #4A808C;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    height: 0.10rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 0 1rem 1rem 0;
+
+}
+
+table {
+    font-family: 'Roboto', sans-serif;
+    color: var(--fc-page);
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.0rem;
+    overflow: hidden;
+    border-left: 1.2rem;
+    border: 0.1rem solid #4A808C;
+}
+
+table thead {
+    font-size: 2.0rem;
+    background-color: var(--bg-thead);
+    height: 6.4rem;
+    text-align: left;
+
+}
+
+thead tr th:nth-child(1) {
+    padding-left: 4.0rem
+}
+
+table tbody tr:nth-child(even) {
+    background: var(--tr-even-color);
+}
+
+table tbody tr:nth-child(odd) {
+    background: var(--tr-odd-color);
+}
+
+.user {
+    padding: 2.4rem 2.4rem 2.4rem 4.0rem;
+    gap: 1.6rem;
+    display: flex;
+}
+
+.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+}
+
+.user a {
+    text-decoration: none;
+    color: var(--fc-page);
+
+}
+
+.clearTableScreen {
+    display: flex;
+    align-items: center;
+    gap: 6.5rem;
+    background: var(--cl-primary);
+    border-radius: 0rem 0rem 1rem 1rem;
+    height: 53rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+    color: var(--fc-clear-page);
+}
+
+img {
+    width: 13.2rem;
+}
+
+.hide {
+    display: none !important;
+}
